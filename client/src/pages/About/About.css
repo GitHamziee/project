@@ -1,0 +1,53 @@
+.team-section {
+    padding: 50px 0;
+    margin-top: 2em;
+  }
+  
+  .custom-card {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .custom-card:hover {
+    transform: translateY(-30px);
+  }
+  .square-avatar {
+    border-radius: 10%!important; /* Ensure the avatar is a square */
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .icon-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .icon-circle:hover {
+    background-color: black;
+    transform: scale(1.1);
+  }
+  
+  .icon-circle .anticon {
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .icon-circle:hover .anticon {
+    color: #fff;
+  }
+  

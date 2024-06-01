@@ -1,0 +1,17 @@
+
+
+  .gradient-button {
+    background: linear-gradient(to right, blue, black);
+    border: none;
+    color: white;
+  }
+  
+  .gradient-button:hover {
+    background: linear-gradient(to left, blue, grey)!important;
+    color: white!important;
+    text-align: center!important;
+  }
+
+  .center{
+    text-align: center!important;
+  }

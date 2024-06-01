@@ -1,0 +1,38 @@
+/* navbar.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+  }
+  
+  .menu-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  .mobileHidden {
+    display: flex;
+  }
+  
+  .mobileVisible {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .mobileHidden {
+      display: none;
+    }
+    .mobileVisible {
+      display: flex;
+      align-items: center;
+    }
+  }
+  

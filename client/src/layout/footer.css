@@ -1,0 +1,36 @@
+/* footer.css */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #001529;
+    color: white;
+    padding: 16px 50px;
+  }
+  
+  .logo {
+    width: 120px;
+    height: 31px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-right: auto;
+  }
+  
+  .mobileHidden {
+    display: flex;
+  }
+  
+  .mobileVisible {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .mobileHidden {
+      display: none;
+    }
+    .mobileVisible {
+      display: flex;
+      align-items: center;
+    }
+  }
+  

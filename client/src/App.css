@@ -1,0 +1,33 @@
+
+.form-container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.title,
+.slogan {
+  text-align: center;
+}
+.auth-image {
+  width: 80%;
+  border-radius: 8px;
+}
+
+.alert {
+  margin-bottom: 1.5rem;
+}
+
+/* profile-card */
+.profile-card {
+  width: 500px;
+}
+.avatar {
+  margin-bottom: 1.5rem;
+}
+.username {
+  text-transform: capitalize;
+}
+.profile-btn {
+  margin-top: 1.3rem;
+  width: 100%;
+} 
