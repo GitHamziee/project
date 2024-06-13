@@ -6,8 +6,18 @@
   .custom-card {
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px rgba(0, 153, 255, 0.404);
     transition: transform 0.3s;
+  }
+
+  .bg-image {
+    height: 90vh;
+    background: url('../../assets/background.png') center center / cover ;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center; 
   }
   
   .custom-card:hover {
@@ -21,7 +31,7 @@
     margin-top: 10px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
   }
   
   .icon-circle {
@@ -51,3 +61,32 @@
     color: #fff;
   }
   
+  @media only screen and (max-width: 600px) {
+    .custom-card {
+      width: 160%;  /* Adjust width as needed */
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .bg-image {
+      height: auto ;
+      background: url('../../assets/background.png') center center / cover ;
+      display: flex ;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center; 
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .bg-image {
+      height: auto ;
+      background: url('../../assets/background.png') center center / cover ;
+      display: flex ;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center; 
+    }
+  }
+ 

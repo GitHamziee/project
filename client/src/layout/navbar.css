@@ -1,38 +1,75 @@
-/* navbar.css */
-
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 100px;
-    height: 100px;
-    margin-top: 40px;
-  }
-  
-  .menu-container {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-  }
-  
-  .mobileHidden {
-    display: flex;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #001529;
+  padding: 0 20px;
+  height: 64px; /* Ensure header height matches the logo */
+}
+
+.logo {
+  height: 100%; /* Ensure the logo fits the header height */
+  margin-right: 20px; /* Add some space between the logo and menu items */
+  margin-top: 50px;
+}
+
+.ant-menu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  background: #001529;
+}
+
+.ant-menu-item {
+  margin: 0;
+}
+
+.ant-menu-item a {
+  text-decoration: none;
+  font-size: 15px; /* Increase the font size */
+  color: white; /* Ensure text color is white */
+}
+
+.ant-menu-item:hover,
+.ant-menu-item-active,
+.ant-menu-item-selected {
+  background: none; /* Remove default background */
+}
+
+.ant-menu-item:hover a {
+  color: #1890ff; /* Change text color on hover */
+}
+
+.mobileVisible {
+  display: none;
+}
+
+@media (max-width: 768px) {
   .mobileVisible {
+    display: inline-block;
+  }
+
+  .mobileHidden {
     display: none;
   }
-  
-  @media (max-width: 768px) {
-    .mobileHidden {
-      display: none;
-    }
-    .mobileVisible {
-      display: flex;
-      align-items: center;
-    }
+
+  .ant-menu-vertical {
+    display: flex;
+    flex-direction: column;
+    background: white; /* Set background to white for mobile drawer */
   }
-  
+
+  .ant-menu-vertical .ant-menu-item {
+    margin: 0;
+  }
+
+  .ant-menu-vertical .ant-menu-item a {
+    text-decoration: none;
+    font-size: 18px; /* Increase the font size */
+    color: black; /* Ensure text color is black for mobile */
+  }
+
+  .ant-menu-vertical .ant-menu-item:hover a {
+    color: #1890ff; /* Change text color on hover for mobile */
+  }
+}

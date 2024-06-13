@@ -3,7 +3,8 @@ import { Alert, Button, Card, Form, Input, Spin, Typography, Divider } from 'ant
 import { Link } from 'react-router-dom';
 import loginImage from '../assets/login.png';
 import useLogin from '../hooks/useLogin';
-import './Auth.css'
+import './Auth.css';
+
 const Login = () => {
   const { error, loading, loginUser } = useLogin();
 
@@ -12,11 +13,11 @@ const Login = () => {
   };
 
   return (
-    <div className='container'>
+    <div className='container '>
       <Card className="form-container">
         <div style={{ display: 'flex', gap: 'large', alignItems: 'left' }}>
           {/* Image */}
-          <div style={{ flex: 1 }}>
+          <div className="image-container" style={{ flex: 1 }}>
             <img src={loginImage} className="auth-image" alt="Login" />
           </div>
           {/* Form */}
@@ -25,7 +26,7 @@ const Login = () => {
               Sign In
             </Typography.Title>
             <Typography.Text type="secondary" strong className="slogan">
-              Unlock your world.
+                Unlock your world.
             </Typography.Text>
             <Form layout="vertical" onFinish={handleLogin} autoComplete="off">
               <Form.Item
@@ -68,22 +69,23 @@ const Login = () => {
                 />
               )}
 
-              <Form.Item className='center' >
+              <Form.Item className='center'>
                 <Button
                   type={`${loading ? '' : 'primary'}`}
                   htmlType="submit"
                   size="large"
-                  className="log-btn"  >
+                  className="log-btn"
+                >
                   {loading ? <Spin /> : 'Sign In'}
                 </Button>
               </Form.Item>
 
               <Divider>OR</Divider>
 
-              <Form.Item className='center' >
-                  <Button size="large" className="gradient-button">
-                  <Link to="/register">Create an account</Link>   
-                  </Button>
+              <Form.Item className='center'>
+                <Button size="large" className="gradient-button">
+                  <Link to="/register">Create an account</Link>
+                </Button>
               </Form.Item>
             </Form>
           </div>

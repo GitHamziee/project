@@ -8,15 +8,12 @@ import {
 import './App.css';
 import Register from './Auth/Register';
 import Login from './Auth/Login';
-import Dashboard from './pages/Dashboard';
 import { useAuth } from './contexts/AuthContext';
 import Homepage from './pages/Homepage/Homepage';
 import DashboardRoute from './pages/dashboard/DashboardRoutes'
 import Error404 from './pages/Error/Error404';
 import Navbar from './layout/navbar';
 import About from './pages/About/About';
-
-
 const MainRoutes = () => {
   const { isAuthenticated } = useAuth();
   return (
@@ -26,7 +23,6 @@ const MainRoutes = () => {
         <Route path='/' element={(<Navbar/>)}>
           <Route index element={<Homepage/>}>
           </Route>
-
           <Route path='/About' element={<About/>}></Route>
         <Route path='/404' element={(<Error404/>)}></Route>
         <Route

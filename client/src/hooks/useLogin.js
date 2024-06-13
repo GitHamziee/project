@@ -16,6 +16,7 @@ const useLogin = () => {
         headers: {
           'Content-Type': 'application/json',
         },
+        
         body: JSON.stringify(values),
       });
 
@@ -27,10 +28,10 @@ const useLogin = () => {
       } else if (res.status === 404) {
         setError(data.message);
       } else {
-        message.error('Registration Failed');
+        message.error('Check Password Maybe ?');
       }
     } catch (error) {
-      message.error('Registration Failed');
+      message.error('Login Failed');
     } finally {
       setLoading(false);
     }

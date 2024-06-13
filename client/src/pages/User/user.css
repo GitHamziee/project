@@ -1,0 +1,55 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .profile-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: auto;
+  }
+  
+  .profile-left {
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+    border-radius: 10px 0 0 10px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .profile-avatar {
+    margin-bottom: 20px;
+  }
+  
+  .profile-name, .profile-role, .profile-edit-icon {
+    color: #fff;
+  }
+  
+  .profile-edit-icon {
+    font-size: 24px;
+    justify-content: right;
+    color: black;
+  }
+  
+  .profile-right {
+    padding: 20px;
+  }
+  
+  .social-icon {
+    font-size: 24px;
+  }
+  
+  .social-icon.facebook {
+    color: #3b5998;
+  }
+  
+  .social-icon.twitter {
+    color: #00acee;
+  }
+  
+  .social-icon.instagram {
+    color: #e4405f;
+  }
+  

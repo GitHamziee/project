@@ -6,6 +6,7 @@ import Navbar from './layout/navbar.jsx';
 import MainRoutes from './MainRoutes.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>

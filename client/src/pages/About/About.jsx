@@ -1,51 +1,54 @@
 import React from 'react';
 import { Card, Avatar, Row, Col } from 'antd';
-import { UserOutlined, FacebookOutlined, TwitterOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons';
+import { UserOutlined, GithubOutlined, LinkedinOutlined , FacebookOutlined } from '@ant-design/icons';
 import './About.css'; 
-import hamzaImage from '../../assets/Hamza.jpg';
+import hamzaImage from '../../assets/Hamza.png';
+import talhaImage from '../../assets/Talha.jpg';
+import aliImage from '../../assets/Ali.jpg';
 const teamMembers = [
   {
     name: 'Hamza Rafique',
-    position: 'Sole owner of Amli',
-    description: 'Owning slaves is my hobby',
+    position: 'React Developer',
+    description: 'Exploring Js frameworks',
     avatar: hamzaImage
   },
   {
-    name: 'Sarah Jhonson',
-    position: 'Product Manager',
-    description: 'Aut maiores voluptates amet et quis praesentium qui senda para',
-    avatar: '/path-to-image2.jpg'
+    name: 'Talha Rabri ',
+    position: 'Team Lead',
+    description: 'Specializing in Data science' , 
+    avatar: talhaImage
   },
   {
-    name: 'William Anderson',
-    position: 'CTO',
-    description: 'Quisquam facilis cum velit laborum corrupti fuga rerum quia',
-    avatar: '/path-to-image3.jpg'
+    name: 'Amli Solat',
+    position: 'Slackie',
+    description: 'Daddy ki moni py ayashi',
+    avatar: aliImage
   }
 ];
 
 const About = () => (
-  
-  <div className=" container team-section">
+  <div className='container-fluid bg-image'>
+   <div className=" container team-section">
     <Row gutter={[20, 20]}>
       {teamMembers.map((member, index) => (
         <Col xs={15} sm={12} md={8} key={index}>
           <Card className="custom-card text-center">
             <Avatar size={150} src={member.avatar} icon={<UserOutlined />} className="mb-3 square-avatar"/>
-            <h3>{member.name}</h3>
-            <h5 className="text-muted">{member.position}</h5>
+            <h4>{member.name}</h4>
+            <h6 className="text-muted">{member.position}</h6>
             <p>{member.description}</p>
             <div className="social-icons">
-              <div className="icon-circle"><FacebookOutlined /></div>
-              <div className="icon-circle"><TwitterOutlined /></div>
-              <div className="icon-circle"><InstagramOutlined /></div>
-              <div className="icon-circle"><LinkedinOutlined /></div>
+            <div className="icon-circle"><LinkedinOutlined /></div>
+            <div className="icon-circle"><GithubOutlined /></div>
+            <div className="icon-circle"><FacebookOutlined /></div>
             </div>
           </Card>
         </Col>
       ))}
     </Row>
   </div>
+  </div>
+ 
 );
 
 export default About;

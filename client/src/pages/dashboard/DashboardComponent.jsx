@@ -15,8 +15,8 @@ const DashboardComponent = () => {
   };
   return (
   <>
-    <Outlet/>
-    
+
+    <Outlet></Outlet>
     </>
   );
 };
