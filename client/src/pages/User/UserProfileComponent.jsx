@@ -9,19 +9,18 @@ import avatarImage from '../../assets/Dummy.png'
 function UserProfileComponent() {
   const { userData } = useAuth();
 
-  return (
-    
-      
+  return (   
     
     <Space direction="vertical" size="large" className="profile-container">
-      <Outlet></Outlet>
+     <Outlet></Outlet>
       <Card className="profile-card image">
+    
         <Row>
           <Col xs={24} md={8} className="profile-left">
             <Avatar size={100} src={avatarImage} className="profile-avatar" />
             <Typography.Title level={4} className="profile-name">{userData?.name}</Typography.Title>
             <Typography.Paragraph className="profile-role">Web Designer</Typography.Paragraph>
-           <Link to="/settings">    <SettingOutlined className="profile-edit-icon" /></Link>
+           <Link to="/dashboard/settings">    <SettingOutlined className="profile-edit-icon" /></Link>
        
           </Col>
           <Col xs={24} md={16} className="profile-right">

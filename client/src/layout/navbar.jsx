@@ -90,9 +90,7 @@ const Navbar = () => {
               <Menu.Item key="1" icon={<HomeOutlined />}>
                 <Link to="/">Home</Link>
               </Menu.Item>
-              <Menu.Item key="2" icon={<InfoCircleOutlined />}>
-                <Link to="/about">About Us</Link>
-              </Menu.Item>
+              
               {isAuthenticated ? (
                 <>
                   <Menu.Item key="4" icon={<UserOutlined />}>
@@ -106,9 +104,16 @@ const Navbar = () => {
                   </Menu.Item>
                 </>
               ) : (
-                <Menu.Item key="7" icon={<LoginOutlined />}>
+                <div>
+                  <Menu.Item key="2" icon={<InfoCircleOutlined />}>
+                <Link to="/about">About Us</Link>
+              </Menu.Item>
+
+              <Menu.Item key="7" icon={<LoginOutlined />}>
                   <Link to="/login">Login</Link>
                 </Menu.Item>
+                </div>
+                
               )}
             </Menu>
           </Drawer>
